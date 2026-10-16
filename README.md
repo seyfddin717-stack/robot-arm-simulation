@@ -35,7 +35,15 @@ Inverse kinematics:
 
 
 The reachable area is an annulus between |L1 − L2| and L1 + L2.
+## Straight-line trajectory
 
+
+
+![Line demo](src/line.gif)
+
+
+
+The end-effector follows a straight line, but the joint angles change non-linearly.
 ## Installation
 
     pip install numpy matplotlib
@@ -45,7 +53,7 @@ The reachable area is an annulus between |L1 − L2| and L1 + L2.
     python src/examples/circle_demo.py
 
 ## Project structure
-
+    src/examples/line_demo.py         straight-line trajectory
     src/kinematics.py                 forward and inverse kinematics
     src/examples/circle_demo.py       circular trajectory animation
     src/examples/workspace_plot.py    workspace plot
