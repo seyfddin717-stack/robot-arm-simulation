@@ -12,6 +12,7 @@
 - Forward kinematics: joint angles -> end-effector position
 - Inverse kinematics: target position -> joint angles (elbow-up / elbow-down)
 - Animation of the arm tracing a circular trajectory
+- Straight-line trajectory with joint angle plots
 - Workspace visualization
 
 ## Kinematics
@@ -35,6 +36,7 @@ Inverse kinematics:
 
 
 The reachable area is an annulus between |L1 − L2| and L1 + L2.
+
 ## Straight-line trajectory
 
 
@@ -44,6 +46,7 @@ The reachable area is an annulus between |L1 − L2| and L1 + L2.
 
 
 The end-effector follows a straight line, but the joint angles change non-linearly.
+
 ## Installation
 
     pip install numpy matplotlib
@@ -51,14 +54,17 @@ The end-effector follows a straight line, but the joint angles change non-linear
 ## Usage
 
     python src/examples/circle_demo.py
+    python src/examples/line_demo.py
+    python src/examples/workspace_plot.py
 
 ## Project structure
-    src/examples/line_demo.py         straight-line trajectory
+
     src/kinematics.py                 forward and inverse kinematics
     src/examples/circle_demo.py       circular trajectory animation
+    src/examples/line_demo.py         straight-line trajectory
     src/examples/workspace_plot.py    workspace plot
 
 ## Future work
-- 3-DOF arm and trajectory planning
+- 3-DOF arm
 - Dynamics and PID control
 - Obstacle avoidance
