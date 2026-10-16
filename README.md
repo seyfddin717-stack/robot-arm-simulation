@@ -4,7 +4,7 @@
 
 
 
-![Workspace](workspace.png)
+![Workspace](examples/workspace.png)
 
 
 
