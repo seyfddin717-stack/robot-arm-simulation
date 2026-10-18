@@ -64,7 +64,7 @@ A third joint controls the tool orientation independently of the tip position. T
     python src/examples/circle_demo.py
     python src/examples/line_demo.py
     python src/examples/workspace_plot.py
-
+    python src/examples/demo_3dof.py
 ## Project structure
 
     src/kinematics.py                 forward and inverse kinematics
@@ -74,6 +74,5 @@ A third joint controls the tool orientation independently of the tip position. T
     src/kinematics_3dof.py            3-DOF forward and inverse kinematics
     src/examples/demo_3dof.py         3-DOF tool-orientation demo
 ## Future work
-
-    - Dynamics and PID control
-    - Obstacle avoidance
+- Dynamics and PID control
+- Obstacle avoidance
