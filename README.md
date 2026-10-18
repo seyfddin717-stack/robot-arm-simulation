@@ -14,7 +14,7 @@
 - Animation of the arm tracing a circular trajectory
 - Straight-line trajectory with joint angle plots
 - Workspace visualization
-
+- 3-DOF arm with tool orientation control
 ## Kinematics
 
 Forward kinematics (link lengths L1, L2, joint angles θ1, θ2):
@@ -46,7 +46,15 @@ The reachable area is an annulus between |L1 − L2| and L1 + L2.
 
 
 The end-effector follows a straight line, but the joint angles change non-linearly.
+## 3-DOF arm
 
+
+
+![3-DOF demo](src/arm3.gif)
+
+
+
+A third joint controls the tool orientation independently of the tip position. The wrist point is computed first, then the 2-link solution is reused for the first two joints.
 ## Installation
 
     pip install numpy matplotlib
@@ -63,8 +71,9 @@ The end-effector follows a straight line, but the joint angles change non-linear
     src/examples/circle_demo.py       circular trajectory animation
     src/examples/line_demo.py         straight-line trajectory
     src/examples/workspace_plot.py    workspace plot
-
+    src/kinematics_3dof.py            3-DOF forward and inverse kinematics
+    src/examples/demo_3dof.py         3-DOF tool-orientation demo
 ## Future work
-- 3-DOF arm
-- Dynamics and PID control
-- Obstacle avoidance
+
+    - Dynamics and PID control
+    - Obstacle avoidance
